@@ -1,0 +1,13 @@
+>>> from PyQt5.QtSql import QSqlDatabase
+
+>>> con = QSqlDatabase.addDatabase("QSQLITE")
+>>> con.setDatabaseName("contacts.sqlite")
+
+>>> con
+<PyQt5.QtSql.QSqlDatabase object at 0x7f0facec0c10>
+
+>>> con.databaseName()
+'contacts.sqlite'
+
+>>> con.connectionName()
+'qt_sql_default_connection'
